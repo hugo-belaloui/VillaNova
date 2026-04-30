@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VillaNova</title>
+    <script src="" defer></script>
+</head>
+
+<body>
+    <header>
+        <form action="" role="search">
+            <input type="search" placeholder="Rechercher un événement..." aria-label="Rechercher un événement">
+        </form>
+        <nav aria-label="Navigation principale">
+            <ul>
+                <li><a href="">Agenda</a></li>
+                <li><a href="">Carte</a></li>
+                <li><a href="">Mon profil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- main event -->
+        <section>
+            <!-- picture as required many versions of same picture depending on screen -->
+            <!-- source used to input a media query condition and let the browser choose -->
+            <figure>
+                <picture>
+                    <source media="(max-width: 768)px" type="Image/webp" srcset="">
+                    <source media="(min-width: 769)px" type="Image/webp" srcset="">
+                    <img src="" alt="Image de l'événement à la une" loading="lazy">
+                </picture>
+                <figcaption>
+                    Image de l'événement à la une (TODO)
+                </figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <!-- filtres -->
+            <nav aria-label="Filtres des événements">
+                <ul>
+                    <li><a href="">Tous</a></li>
+                    <li><a href="">Concerts</a></li>
+                    <li><a href="">Théatre</a></li>
+                    <li><a href="">Expositions</a></li>
+                    <li><a href="">Gratuit</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <article>
+                    <figure>
+                        <picture>
+                            <source media="(max-width: 768)px" type="Image/webp" srcset="">
+                            <source media="(min-width: 769)px" type="Image/webp" srcset="">
+                            <img src="" alt="Image de l'événement numéro un" loading="lazy">
+                        </picture>
+                        <figcaption>
+                            Image de l'événement numéro un
+                        </figcaption>
+                    </figure>
+                    <!-- filtres -->
+                    <span>Concert</span>
+                    <h2>Event Title</h2>
+                    <p>lieu</p>
+                    <p>date</p>
+                    <a href="" aria-label="En savoir plus sur l'événement Event Title">En savoir plus</a>
+                </article>
+                <article>
+                    //
+                </article>
+                <article>
+                    //
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <!-- box footer -->
+            <div>
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="">Acceuil</a></li>
+                    <li><a href="">Evenements</a></li>
+                    <li><a href="">A propos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Partenaires</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Suivez-nous</h3>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
