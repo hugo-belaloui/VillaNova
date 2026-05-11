@@ -1,0 +1,88 @@
+.hero {
+    padding: $spacing-medium;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .hero-figure {
+        position: relative;
+        margin: 0;
+        border-radius: 20px;
+        overflow: hidden;
+        
+        img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+
+            @include desktop {
+                height: 500px;
+            }
+        }
+
+        .hero-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: $spacing-large;
+            background: linear-gradient(to top, rgba(30, 30, 30, 0.9), transparent);
+            color: $color-bg;
+
+            .hero-tag {
+                background-color: $color-secondary;
+                color: $color-primary;
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                display: inline-block;
+                margin-bottom: $spacing-small;
+            }
+
+            .hero-title {
+                color: $color-bg;
+                margin-bottom: $spacing-small;
+            }
+
+            .hero-date {
+                font-size: 1.1rem;
+                margin-bottom: $spacing-medium;
+            }
+        }
+    }
+}
+
+.events-section {
+    max-width: 1200px;
+    margin: $spacing-large auto;
+    padding: 0 $spacing-medium;
+
+    .filters-nav {
+        margin-bottom: $spacing-large;
+        
+        ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: $spacing-small;
+            justify-content: center;
+
+            li a {
+                text-decoration: none;
+                color: $color-primary;
+                padding: 8px 16px;
+                border: 2px solid $color-primary;
+                border-radius: 25px;
+                font-weight: bold;
+                transition: all 0.3s ease;
+
+                &:hover, &.active {
+                    background-color: $color-primary;
+                    color: $color-bg;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.site-footer {
+    background-color: #1E1E1E;
+    color: $color-bg;
+    padding: $spacing-large $spacing-medium $spacing-medium;
+    margin-top: $spacing-large;
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $spacing-large;
+
+        @include tablet {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .footer-box {
+        h3 {
+            color: $color-secondary;
+            margin-bottom: $spacing-medium;
+            font-size: 1.2rem;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                margin-bottom: $spacing-small;
+
+                a {
+                    color: $color-bg;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: $color-secondary;
+                    }
+                }
+            }
+        }
+        
+        .social-links {
+            display: flex;
+            gap: $spacing-medium;
+            list-style: none;
+
+            li a {
+                color: $color-bg;
+                text-decoration: none;
+                transition: color 0.3s ease;
+                font-weight: bold;
+
+                &:hover {
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        max-width: 1200px;
+        margin: $spacing-large auto 0;
+        padding-top: $spacing-medium;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        font-size: 0.9rem;
+        color: #999;
+    }
+}

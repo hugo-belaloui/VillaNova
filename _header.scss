@@ -1,0 +1,73 @@
+.site-header {
+    background-color: $color-bg;
+    padding: $spacing-medium;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-medium;
+
+        @include tablet {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .logo {
+        font-family: $font-heading;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $color-primary;
+        text-decoration: none;
+    }
+
+    .search-form {
+        flex-grow: 1;
+        max-width: 400px;
+        
+        input[type="search"] {
+            width: 100%;
+            padding: 10px 20px;
+            border: 2px solid rgba($color-primary, 0.2);
+            border-radius: 25px;
+            font-family: $font-body;
+            transition: all 0.3s ease;
+
+            &:focus-visible {
+                outline: none;
+                border-color: $color-secondary;
+            }
+        }
+    }
+
+    .main-nav {
+        ul {
+            list-style: none;
+            display: flex;
+            gap: $spacing-medium;
+            justify-content: center;
+
+            @include tablet {
+                justify-content: flex-end;
+            }
+
+            li a {
+                text-decoration: none;
+                color: $color-primary;
+                font-weight: bold;
+                padding: 8px 12px;
+                border-radius: 20px;
+                transition: all 0.3s ease;
+
+                &:hover, &.active {
+                    background-color: rgba($color-secondary, 0.1);
+                    color: $color-secondary;
+                }
+            }
+        }
+    }
+}

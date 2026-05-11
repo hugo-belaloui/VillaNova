@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500&family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: $font-body;
+
+    font-size: clamp(1rem, 1vw + 0.8rem, 1.125rem);
+
+
+    line-height: 1.6;
+
+
+    color: #333;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $font-heading;
+    color: $color-primary;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+}
+
+
+h1 {
+    font-size: clamp(2rem, 4vw + 1rem, 3rem);
+}
+
+h2 {
+    font-size: clamp(1.75rem, 3vw + 1rem, 2.25rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 1.75rem);
+}
+
+h4 {
+    font-size: clamp(1.25rem, 1.5vw + 1rem, 1.5rem);
+}
+
+
+.dyslexic-mode {
+    font-family: $font-dyslexic !important;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    span,
+    a,
+    button {
+        font-family: $font-dyslexic !important;
+        letter-spacing: 0.05em;
+        line-height: 1.8;
+    }
+}
