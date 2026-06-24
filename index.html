@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VillaNova</title>
     <link rel="stylesheet" href="main.css">
-    <script src="" defer></script>
+    <script src="config.js" defer></script>
+    <script src="api-openagenda.js" defer></script>
 </head>
 
 <body>
@@ -54,55 +55,8 @@
                 </ul>
             </nav>
 
-            <div class="events-grid">
-                <article class="event-card">
-                    <figure class="event-image">
-                        <picture>
-                            <source media="(max-width: 768px)" type="image/webp" srcset="https://placehold.co/400x300/E5E7EB/2A2A2A?text=Event+1">
-                            <source media="(min-width: 769px)" type="image/webp" srcset="https://placehold.co/400x300/E5E7EB/2A2A2A?text=Event+1">
-                            <img src="https://placehold.co/400x300/E5E7EB/2A2A2A?text=Event+1" alt="Image de l'événement numéro un" loading="lazy">
-                        </picture>
-                    </figure>
-                    <div class="event-content">
-                        <span class="event-category">Concert</span>
-                        <h3 class="event-title">Symphonie du Printemps</h3>
-                        <p class="event-location">Grand Théâtre</p>
-                        <p class="event-date">12 Mai 2026</p>
-                        <a href="event-detail.html" class="btn-primary" aria-label="En savoir plus sur l'événement Symphonie du Printemps">En savoir plus</a>
-                    </div>
-                </article>
-                <article class="event-card">
-                    <figure class="event-image">
-                        <picture>
-                            <source media="(max-width: 768px)" type="image/webp" srcset="https://placehold.co/400x300/E5E7EB/2A2A2A?text=Event+2">
-                            <source media="(min-width: 769px)" type="image/webp" srcset="https://placehold.co/400x300/E5E7EB/2A2A2A?text=Event+2">
-                            <img src="https://placehold.co/400x300/E5E7EB/2A2A2A?text=Event+2" alt="Image de l'événement numéro deux" loading="lazy">
-                        </picture>
-                    </figure>
-                    <div class="event-content">
-                        <span class="event-category">Exposition</span>
-                        <h3 class="event-title">Art Contemporain</h3>
-                        <p class="event-location">Musée des Beaux-Arts</p>
-                        <p class="event-date">15 au 30 Mai 2026</p>
-                        <a href="event-detail.html" class="btn-primary" aria-label="En savoir plus sur l'événement Art Contemporain">En savoir plus</a>
-                    </div>
-                </article>
-                <article class="event-card">
-                    <figure class="event-image">
-                        <picture>
-                            <source media="(max-width: 768px)" type="image/webp" srcset="https://placehold.co/400x300/E5E7EB/2A2A2A?text=Event+3">
-                            <source media="(min-width: 769px)" type="image/webp" srcset="https://placehold.co/400x300/E5E7EB/2A2A2A?text=Event+3">
-                            <img src="https://placehold.co/400x300/E5E7EB/2A2A2A?text=Event+3" alt="Image de l'événement numéro trois" loading="lazy">
-                        </picture>
-                    </figure>
-                    <div class="event-content">
-                        <span class="event-category">Théâtre</span>
-                        <h3 class="event-title">Le Malade Imaginaire</h3>
-                        <p class="event-location">Petite Scène</p>
-                        <p class="event-date">22 Mai 2026</p>
-                        <a href="event-detail.html" class="btn-primary" aria-label="En savoir plus sur l'événement Le Malade Imaginaire">En savoir plus</a>
-                    </div>
-                </article>
+            <div class="events-grid" id="events-container">
+                <!-- events are injected dynamically here using JS -->
             </div>
         </section>
     </main>

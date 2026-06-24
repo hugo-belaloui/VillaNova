@@ -1,0 +1,101 @@
+{
+  "total": 2122,
+  "events": [
+    {
+      "image": {
+        "filename": "e0941810e4d044d1b6ce2f2f588b12a6.base.image.jpg",
+        "size": {
+          "width": 700,
+          "height": 972
+        },
+        "variants": [
+          {
+            "filename": "e0941810e4d044d1b6ce2f2f588b12a6.full.image.jpg",
+            "size": {
+              "width": 1441,
+              "height": 2000
+            },
+            "type": "full"
+          },
+          {
+            "filename": "e0941810e4d044d1b6ce2f2f588b12a6.thumb.image.jpg",
+            "size": {
+              "width": 200,
+              "height": 200
+            },
+            "type": "thumbnail"
+          }
+        ],
+        "base": "https://cdn.openagenda.com/main/"
+      },
+      "featured": false,
+      "attendanceMode": 1,
+      "keywords": {
+        "fr": [
+          "Exposition",
+          "Gratuit",
+          "Galerie de l'histoire",
+          "Libération",
+          "Provence américaine"
+        ]
+      },
+      "dateRange": {
+        "ar": "١٠ يونيو - ٤ يوليو",
+        "de": "10 Juni - 4 Juli",
+        "en": "10 June - 4 July",
+        "it": "10 giugno - 4 luglio",
+        "fr": "10 juin - 4 juillet",
+        "es": "10 junio - 4 julio",
+        "nl": "10 juni - 4 juli"
+      },
+      "imageCredits": "La Métropole Aix-Marseille-Provence",
+      "originAgenda": {
+        "uid": 57051543,
+        "image": "agenda57051543.jpg?__ts=1638172533022",
+        "title": "Martigues : art, histoire, archéologie"
+      },
+      "description": {
+        "fr": "Exposition du 10 juin au 4 juillet"
+      },
+      "title": {
+        "fr": "LA PROVENCE AMÉRICAINE. DE LA LIBÉRATION À LA RECONSTRUCTION (1944-1947)"
+      },
+      "onlineAccessLink": null,
+      "uid": 31670572,
+      "lastTiming": {
+        "end": "2026-07-04T18:00:00+02:00",
+        "begin": "2026-07-04T14:00:00+02:00"
+      },
+      "firstTiming": {
+        "end": "2026-06-10T12:00:00+02:00",
+        "begin": "2026-06-10T08:30:00+02:00"
+      },
+      "location": {
+        "address": "Rond-point de l'Hôtel de ville 13500 Martigues",
+        "city": "Martigues",
+        "latitude": 43.405794,
+        "name": "Galerie de l'histoire",
+        "longitude": 5.047739
+      },
+      "slug": "la-provence-americaine-de-la-liberation-a-la-reconstruction-1944-1947",
+      "status": 1,
+      "nextTiming": {
+        "begin": "2026-06-24T08:30:00+02:00",
+        "end": "2026-06-24T12:00:00+02:00"
+      }
+    }
+  ],
+  "after": [
+    "0",
+    "000001782282600",
+    "1783180800000",
+    "31670572"
+  ],
+  "sort": "timingsWithFeatured.asc",
+  "times": {
+    "agenda": 3,
+    "searchAccess": 0,
+    "eventSearch": 40
+  },
+  "success": true
+}
