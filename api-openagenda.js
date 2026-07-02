@@ -1,6 +1,6 @@
 async function fetchEvents() {
     try {
-        const response = await fetch('https://api.openagenda.com/v2/agendas/21769447/events?key=1aa930631b0644dea161e24533698df9');
+        const response = await fetch(`https://api.openagenda.com/v2/agendas/21769447/events?key=${OPENAGENDA_API_KEY}`);
         const data = await response.json();
         const events = data.events;
         
@@ -50,7 +50,7 @@ async function fetchEvents() {
             // place
             const locationP = document.createElement('p');
             locationP.className = 'event-location';
-            locationP.textContent = event.locationName || 'Lieu non précisé';
+            locationP.textContent = event.location?.name || 'Lieu non précisé';
             
             // date
             const dateP = document.createElement('p');
